@@ -1,8 +1,6 @@
 .info{
   background: #efefef;
   padding: 15px;
-  margin-top: 0px;
-  margin-bottom: 0px;
   text-align: center; 
 }
 .info p{
@@ -11,7 +9,7 @@
 .info h1{
   margin: 0px;
 }
-img {
+.info img {
   border-radius: 50%;
   width: 100px;
   height: 100px;
@@ -21,4 +19,42 @@ img {
 }
 .text h2 {
   margin: 10px;
+}
+.info_2{
+  list-style-type: none;
+  background-color: #efefef;
+  margin-top: 0px;
+  text-align: center;
+}
+.info_2 img {
+  border-radius: 15%;
+  width: 170px; 
+  height:40px;
+}
+.tanmatu li{
+ display: inline-flex;
+ border-style: solid;
+ padding: 30px 20px;
+ margin: 20px;
+ box-sizing: border-box;
+ border: 2px #000000 solid;
+ border-radius: 15px;
+
+}
+.tanmatu img {
+  width:200px;
+  height:auto; 
+}
+.tanmatu li:hover{
+  border-color:  #D2691A;
+}
+.tanmatu li:active{
+  border-color: chartreuse;
+}
+footer {
+  background-color: #efefef;
+  
+  text-align: center;
+  font-size: 14px;
+  margin-bottom: 0px;
 }

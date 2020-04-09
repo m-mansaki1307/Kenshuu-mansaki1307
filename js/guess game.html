@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <body>
+   <label for="">数字を予想して下さい。</label>
+   <input id="number"/>
+
+   <button>予測する！</button>
+
+   <script>
+
+     function nagaiyatu() {
+      let number =  Math.round((Math.random() *10));
+      console.log(number);
+      return number;
+     }
+
+     var secret= nagaiyatu();
+
+     var input = document.querySelector('#number');
+    
+    function cheekEquais() {
+      if(secret == input.value) {
+        //正しい
+        alert('正解！');
+        secret = nagaiyatu();
+      } else {
+        //間違い
+        alert('不正解！');
+      }
+
+      input.value = '';
+        input.focus();
+    }
+
+    let button = document.querySelector('button');
+    button.onclick = checkEquals;
+    
+   </script>
+  </body>
+</html>

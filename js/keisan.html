@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+  </head>
+  <body>
+    <script>
+
+    function printScreen(message) {
+
+      document.write(message);
+      document.write('br/>');
+    }
+
+    let number1 = prompt("1つ目の数字を入力してください");
+    let number2 = prompt("2つ目の数字を入力してください");
+    
+    console.log(number1);
+    console.log(number2);
+
+    let result1 = number1 + number2;
+    printScreen("足し算 :" +(number1 + number2));
+    
+    let result2 = number1 - number2;
+    printScreen("引き算 :" +(number1 - number2));
+    
+    let result3 = number1 * number2;
+    printScreen("掛け算 :" +(number1 * number2));
+    
+    let result4 = number1 / number2;
+    printScreen("割り算 :" +(number1 / number2));
+    
+    </script>
+  </body>
+
+</html>
