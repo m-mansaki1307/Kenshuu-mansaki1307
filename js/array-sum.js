@@ -4,6 +4,8 @@ let numbers = [1,2,3,4,5];
 function arraySumWithFor(array) {
     let sum = 0;
 
+    //for文の書き方が違っているので見直してください。
+   //for文はカウンターの初期化、ループ条件、カウンターの更新です。
     for(let i=0, len=array. length; i<len; ++i) {
         sum += array[i];
     }
@@ -12,10 +14,17 @@ function arraySumWithFor(array) {
 
 //While を使ってarray の合計を計算してください。
 function arraySumWithWhile(array) {
-    let sum = 0;
+   //Whileループの書き方が少し違うので見直しをしてください。
+   //While文は
+   //カウンターの初期化
+   //while(ループ条件){
+   //   ループ処理
+   //　　カウンターの更新
+   //}
+ 
+   let sum = 0;
     
    while(sum<15) {
-     
      
    }
     return sum
@@ -23,6 +32,13 @@ function arraySumWithWhile(array) {
 
  //Do While を使ってarray の合計を計算してください。
 function arraySumWithDoWhile(array) {
+    //do..whileの書き方が少し違うので見直しをしてください。
+    //do..whileは
+ 　 //カウンターの初期化
+    //do {
+    // ループする処理
+    //} while(ループの条件)
+  
     let sum = 0;
     let i = 1;
    do {
@@ -30,6 +46,8 @@ function arraySumWithDoWhile(array) {
    } while(sum<15) {
       sum = sum + i;
    }
+ 
+     
     return sum
 }
 
