@@ -23,11 +23,14 @@ function arraySumWithWhile(array) {
    //}
  
    let sum = 0;
-    
+   let i= 0;
+
    
-   while(){
-     
+   while (sum <= array.length) {
+    sum += array[i];
+    i++;
    }
+
     return sum
 }
 
@@ -35,7 +38,7 @@ function arraySumWithWhile(array) {
 function arraySumWithDoWhile(array) {
     //do..whileの書き方が少し違うので見直しをしてください。
     //do..whileは
- 　 //カウンターの初期化
+   //カウンターの初期化
     //do {
     // ループする処理
     //} while(ループの条件)

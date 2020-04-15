@@ -19,4 +19,18 @@ class ItoList {
     this._list = [];
   }
 
+  // 指定された糸を削除する。
+  selectClear(ito) { 
+    // this._listあなたはItoを持っていますか？
+    // this._list itoを削除してください。
+
+   for(let index = 0; index < this._list.length; index++ ) {
+     if(JSON.stringify(ito) == JSON.stringify(this._list[index])) {
+       itemIndex = index;
+       break;
+
+     }
+   }
+      this._list.splice(itemindex,1);
+  }
 }

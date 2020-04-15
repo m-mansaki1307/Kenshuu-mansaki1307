@@ -6,7 +6,7 @@ class ItoListView {
 
   }
 
-  _template(ito) {
+  template(ito) {
     return `<tr class="ito">
     <td>${ito.color}</td>
     <td>${ito.brand}</td>
@@ -14,22 +14,7 @@ class ItoListView {
     </tr>`;
   }
 
-  _template(ito) {
-     let _template = document.createElement("tr");
-    tdColor.textContent = ito.color;
-
-     let tdcolor =document.createElement('td');
-     tdBrand.textContent = ito.brand;
-
-     let tdhinban =document.createElement('td');
-     tdHinban.textContent = ito.hinban;
-
-     tr.appendCHILD(tdColor);
-     tr.appendCHILD(tdBrand);
-     tr.appendCHILD(tdHinban);
-
-     this._element/appendCHILD(tr);
-  }
+  _
 
   update(ito) {
 
@@ -39,4 +24,27 @@ class ItoListView {
 
     
   }
+templateDocument(ito) {
+  let tdColor = document.createElement("td");
+  tdColor.textContent = ito.color;
+
+  let tdBrand =document.createElement('td');
+  tdBrand.textContent = ito.brand;
+
+  let tdHinban =document.createElement('td');
+  tdHinban.textContent = ito.hinban;
+
+  let tr = document.createElement('tr');
+  tr.appendChild(tdColor);
+  tr.appendChild(tdBrand);
+  tr.appendChild(tdHinban);
+
+  this._element.appendChild(tr);
+  }
+
+
+  clear() {
+    this._element.innerHTML = "";
+  }
+
 }

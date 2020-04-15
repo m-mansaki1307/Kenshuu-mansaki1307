@@ -16,7 +16,7 @@ class Ito {
     return this._brand;
   }
 
-  get color() {
+  get hinban() {
     return this._hinban;
   }
 }

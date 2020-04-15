@@ -23,7 +23,7 @@
         <h2>糸</h2>
 
         <table>
-          <thead class="ito-table">
+          <thead >
             <tr class="ito">
               <th>色</th>
               <th>メーカー</th>
@@ -32,7 +32,8 @@
             </tr>
           </thead>
 
-          <tbody>
+          <tbody class="ito-table">
+
             <tr class="ito">
               <td>#0000ff</td>
               <td>DMC</td>
@@ -63,7 +64,8 @@
           <input id="hinban" name="hinban" type="number" placeholder="123" class="color-field">
         </div>
 
-        <button id="add-ito">糸を追加する</button>
+        <button id="add-ito" type="onsubmit" class="button btn-main"> 糸を追加する</button>
+        <button id="Clear-ito" onclick="itoController.clearIto(event)">糸を削除する</button>
       </form>
     </section>
   
