@@ -6,7 +6,7 @@ function arraySumWithFor(array) {
 
     //for文の書き方が違っているので見直してください。
    //for文はカウンターの初期化、ループ条件、カウンターの更新です。
-    for(let i=0, len=array. length; i<len; ++i) {
+    for(let i=0 ; i < array.length; i++) {
         sum += array[i];
     }
     return sum
@@ -24,7 +24,8 @@ function arraySumWithWhile(array) {
  
    let sum = 0;
     
-   while(sum<15) {
+   
+   while(){
      
    }
     return sum
