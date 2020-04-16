@@ -23,14 +23,17 @@ class ItoList {
   selectClear(ito) { 
     // this._listあなたはItoを持っていますか？
     // this._list itoを削除してください。
-
+    let itemIndex =-1;
+    
    for(let index = 0; index < this._list.length; index++ ) {
      if(JSON.stringify(ito) == JSON.stringify(this._list[index])) {
        itemIndex = index;
        break;
-
      }
-   }
-      this._list.splice(itemindex,1);
+    }
+    if (itemIndex >= 0) {
+    this._list.splice(itemIndex,1);
+    }
+     
   }
 }

@@ -113,7 +113,7 @@ button{
   display: block;
   clear: both;
   margin: 10px 0px;
-
+  display: inline-block;
 }
 
 button:active{

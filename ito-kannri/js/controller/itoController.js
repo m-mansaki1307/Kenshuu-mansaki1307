@@ -7,9 +7,20 @@ class ItoController {
        this._inputColor = $('#color');
        this._inputBrand = $('#brand');
        this._inputHinban = $('#hinban');
+       this._itoTable = $('.ito-table');
 
        this._itoList = new ItoList();
        this._itoListView = new ItoListView($('.ito-table')); 
+      //  イベントの実行を監視する
+       this._itoTable.addEventListener('dblclick',function(enent){
+          //ダブルクリックされた 
+          // イベント=>ターゲット=>ペアレントノード
+        let clickRow = event.target.parentNode ;       
+
+          // 糸消去の呼び出し
+          this.deletIto(clickRow);
+        
+         }.bind(this));
     }
 
   //  リストを追加する
@@ -53,13 +64,25 @@ class ItoController {
     }
 
     // 糸を一つ削除する
-    deletIto() {
-      // 
-      
+    deletIto(clickRow) {
+      //  クリックされた行から糸オブジェクトを作成する。
+      let sakujoSuruIto = new Ito(
+        // 色セルのデータ
+        clickRow.children[0].textContent,
+        // メーカーセルのデータ
+        clickRow.children[1].textContent,
+        // 品番セルのデータ
+        clickRow.children[2].textContent
+       );
 
-      // 
-      this._itoList.selectClear();
-    }
+
+
+         // 糸リストから消す
+         this._itoList.selectClear(sakujoSuruIto);
+
+         //画面から消す
+         clickRow.remove();
+      }
 
     // 入力欄を初期値に戻す処理
    _formSetDefault() {
