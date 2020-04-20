@@ -5,7 +5,7 @@
 function fibonatchi(n,count){
  
   for (let i=0; i<count; i++) {
-    result =(n-1)+(n-2);
+    result =(n-1)+(n-2); //フィボナッチがよくわからない
     console.log(result);
   } 
 }
